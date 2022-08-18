@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+
+            #   = id
+            .   = class
+            :   = pseudo-class
+            ::  = pseudo-element
+            >   = clidren
+            
+        SELETORES PERSONALIZADOS  */
+
+        a{
+            color: darkred;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: rgba(139, 0, 0, 0.37);
+        }
+
+        a:active{
+            color: darkred;
+        }
+
+        a{
+
+        }
+
+        .especial{
+            background-color: rgba(252, 0, 0, 0.349); 
+        }
+
+        .especial::before{
+            content: '⇨ ';
+        }
+        
+        .especial::after{
+            content: ' ⇦';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <Ul>
+        <li><a href="https://www.google.com/search?q=cep+da+16+psul&client=firefox-b-d&sxsrf=ALiCzsbxfxEZlamnzyBrph-DkTXOccEFFA%3A1660424511212&ei=PxH4YrjHDN7y1sQPo7aHoAc&ved=0ahUKEwj44qqp28T5AhVeuZUCHSPbAXQQ4dUDCA0&uact=5&oq=cep+da+16+psul&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzoHCAAQRxCwAzoKCAAQRxCwAxDJAzoICAAQHhAPEAg6BggAEB4QCDoGCAAQHhAWOgUIABCABDoECCMQJzoLCC4QgAQQxwEQrwE6CAgAEIAEEMkDOggIABAeEBYQCjoICAAQHhAPEBZKBAhBGABKBAhGGABQlA1Yk1lgoltoA3ABeACAAaEBiAHyG5IBBDAuMjaYAQCgAQHIAQjAAQE&sclient=gws-wiz-serp" target="_blank">DZ6</a></li>
+        <li><a href="https://www.youtube.com/">YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/" class="especial">CursoemVideo</a></li>
+    </Ul>
+</body>
+</html>
