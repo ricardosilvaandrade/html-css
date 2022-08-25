@@ -15,9 +15,26 @@
             border-collapse: collapse;
         }
 
-        thead, tfoot{
-            background-color: darkgrey;
+        caption{
+            background-color: rgba(128, 128, 128, 0.445);
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
         }
+
+        thead, tfoot{
+            background-color: rgb(100, 100, 100);
+            color: white;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: rgba(2, 169, 247, 0.342);
+        }
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: rgba(128, 128, 128, 0.342);
+        }
+
         td, th{
             border: 1px solid black;
             padding: 10px;
@@ -30,10 +47,12 @@
 </head>
 <body>
     <table>
+        <caption>População das unidade Federais</caption>
+
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
             
@@ -176,7 +195,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td>210.147.125</td>
             </tr>
         </tfoot>
